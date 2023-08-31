@@ -4,11 +4,15 @@ var pianoBlackButtons = document.querySelectorAll(".small");
 pianoWhiteButtons.forEach(function(btn) {
     btn.onclick = function() {
         makeSound(this.classList[1]);
+        buttonAnimation(this.classList[1])
+
     }
 })
 pianoBlackButtons.forEach(function(btn) {
     btn.onclick = function() {
         makeSound(this.classList[1]);
+        buttonAnimation(this.classList[1])
+
     }
 
 })
